@@ -494,4 +494,68 @@ print(fc.div(a, b))
 #   - 받아들인 3개의 값(기호 1개, 숫자 2개)에 따라 사칙연산하는 계산기
 #   - 구구단 전체(2단 ~ 9단)를 출력
 
-# print("!")
+'''
+# 1.
+class _ADD:
+    def __init__(self):
+        self.result = 0
+    def add(self, x, y):
+        return x + y
+ad = _ADD()
+class _SUB:
+    def __init__(self):
+        self.result = 0
+    def sub(self, x, y):
+        return x - y
+sb = _SUB()
+class _MUL:
+    def __init__(self):
+        self.result = 0
+    def mul(self, x, y):
+        return x * y
+ml = _MUL()
+class _DIV:
+    def __init__(self):
+        self.result = 0
+    def div(self, x, y):
+        return x / y
+dv = _DIV()
+
+a, b = 4, 6
+print(ad.add(a, b))
+print(sb.sub(a, b))
+print(ml.mul(a, b))
+print(dv.div(a, b))
+'''
+
+'''
+# 2.
+x, y, z = int(input("값1: ")), int(input("값2: ")), int(input("값3: "))
+if x > y and x > z: max = x
+elif y > x and y > z: max = y
+elif z > x and z > x: max = z
+if x < y and x < y: min = x
+elif y < x and y < z: min = y
+elif z < x and z < y: min = z
+print("제일 큰 값: %d | 제일 작은 값: %d" % (max, min))
+'''
+
+'''
+# 3.
+x, y, asmd = int(input("값1 : ")), int(input("값2 : ")), (input("값3 : "))
+asmd_list = ['+', '-', '*', '/']
+if asmd == '+' in asmd_list: tmp = x + y
+if asmd == '-' in asmd_list: tmp = x - y
+if asmd == '*' in asmd_list: tmp = x * y
+if asmd == '/' in asmd_list: tmp = x / y
+
+print("%d %s %d = %d" % (x, asmd, y, tmp))
+'''
+
+'''
+# 4.
+for i in range(1, 10):
+    for j in range(2, 10):
+        print("%d x %d = %d" % (j, i, i*j), end='\t')
+    print()
+'''
